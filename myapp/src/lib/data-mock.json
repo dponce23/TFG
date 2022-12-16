@@ -1,0 +1,30 @@
+{
+  "links": [
+    { "texto": "Inicio", "enlace": "/" },
+    { "texto": "Moda Hombre", "enlace": "#/hombre" },
+    { "texto": "Moda Mujer", "enlace": "#/mujer" },
+    { "texto": "Niños", "enlace": "#/ninio" }
+  ],
+  "productos": [
+    {
+      "id_prod": "12",
+      "titulo": "producto 1",
+      "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
+      "exclusivo": "true",
+      "imgBanner": ""
+    },
+    {
+      "id_prod": "123",
+      "titulo": "producto 2",
+      "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
+      "exclusivo": "true",
+      "imgBanner": ""
+    },
+    {
+      "id_prod": "1234",
+      "titulo": "producto 3",
+      "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
+      "imgBanner": ""
+    }
+  ]
+}
