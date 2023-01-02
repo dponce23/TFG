@@ -8,23 +8,68 @@
   "productos": [
     {
       "id_prod": "12",
-      "titulo": "producto 1",
-      "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
-      "exclusivo": "true",
-      "imgBanner": ""
+      "id_categoria": "",
+      "nombre": "Camiseta blanca algodon",
+      "precio": "",
+      "stock": "",
+      "descripcion": "CAMISETA BLANCA ALGODON 100%",
+      "exclusivo": "1",
+      "imagen": "/src/assets/camiseta_blanca.png"
     },
     {
-      "id_prod": "123",
-      "titulo": "producto 2",
-      "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
-      "exclusivo": "true",
-      "imgBanner": ""
+      "id_prod": "12",
+      "id_categoria": "",
+      "nombre": "Camiseta negra algodon",
+      "precio": "",
+      "stock": "",
+      "descripcion": "CAMISETA NEGRA ALGODON 100%",
+      "exclusivo": "2",
+      "imagen": "/src/assets/camiseta_negra.png"
     },
     {
-      "id_prod": "1234",
-      "titulo": "producto 3",
+      "id_prod": "12",
+      "id_categoria": "",
+      "nombre": "producto 1",
+      "precio": "",
+      "stock": "",
       "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
-      "imgBanner": ""
+      "imagen": "/src/assets/camiseta_blanca.png"
+    },
+    {
+      "id_prod": "12",
+      "id_categoria": "",
+      "nombre": "producto 1",
+      "precio": "",
+      "stock": "",
+      "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
+      "imagen": "/src/assets/camiseta_blanca.png"
+    },
+    {
+      "id_prod": "12",
+      "id_categoria": "",
+      "nombre": "producto 1",
+      "precio": "",
+      "stock": "",
+      "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
+      "imagen": "/src/assets/camiseta_blanca.png"
+    },
+    {
+      "id_prod": "12",
+      "id_categoria": "",
+      "nombre": "producto 1",
+      "precio": "",
+      "stock": "",
+      "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
+      "imagen": "/src/assets/camiseta_blanca.png"
+    },
+    {
+      "id_prod": "12",
+      "id_categoria": "",
+      "nombre": "producto 1",
+      "precio": "",
+      "stock": "",
+      "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
+      "imagen": "/src/assets/camiseta_blanca.png"
     }
   ]
 }
