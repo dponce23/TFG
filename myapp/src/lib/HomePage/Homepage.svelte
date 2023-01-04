@@ -1,5 +1,5 @@
 <script>
-  import Banner from "../Banner/Banner.svelte";
+  import BannerCarousel from "../BannerCarousel/BannerCarousel.svelte";
 </script>
 
-<Banner />
+<BannerCarousel />

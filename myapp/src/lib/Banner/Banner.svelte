@@ -1,35 +1,33 @@
 <script>
-  import { productos } from "../data-mock.json";
+  export let data = {};
 </script>
 
-{#each productos as producto}
-  {#if producto?.exclusivo == "1"}
-    <div class="container">
-      <span class="etiqueta"><b>EXCLUSIVO</b></span>
-      <div class="info">
-        <div>
-          <img src={producto?.imagen} alt="" />
-        </div>
-        <div>
-          <p><b>DESCUENTO 10%</b> {producto?.descripcion}</p>
-        </div>
+{#if data?.exclusivo == "1"}
+  <div class="container">
+    <span class="etiqueta"><b>EXCLUSIVO</b></span>
+    <div class="info">
+      <div>
+        <img src={data?.imagen} alt="" />
+      </div>
+      <div>
+        <p><b>DESCUENTO 10%</b> {data?.descripcion}</p>
       </div>
     </div>
-  {/if}
-  {#if producto?.exclusivo == "2"}
-    <div class="container">
-      <span class="etiqueta"><b>EXCLUSIVO</b></span>
-      <div class="info">
-        <div>
-          <p><b>DESCUENTO 10% </b> {producto?.descripcion}</p>
-        </div>
-        <div>
-          <img src={producto?.imagen} alt="" />
-        </div>
+  </div>
+{/if}
+{#if data?.exclusivo == "2"}
+  <div class="container">
+    <span class="etiqueta"><b>EXCLUSIVO</b></span>
+    <div class="info">
+      <div>
+        <p><b>DESCUENTO 10% </b> {data?.descripcion}</p>
+      </div>
+      <div>
+        <img src={data?.imagen} alt="" />
       </div>
     </div>
-  {/if}
-{/each}
+  </div>
+{/if}
 
 <style>
   .container {
