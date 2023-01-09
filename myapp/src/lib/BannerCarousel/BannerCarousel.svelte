@@ -13,6 +13,7 @@
                 let posicion = i;
                 let operacion = posicion * -50;
 
+                // @ts-ignore
                 grande.style.transform = `translateX(${operacion}%)`;
                 puntos.forEach((cadaPunto, i) => {
                     puntos[i].classList.remove("activo");
@@ -26,12 +27,15 @@
 
 <div class="carousel">
     <div class="grande">
-        <div class="banner"><Banner data={productos[0]} /></div>
-        <div class="banner"><Banner data={productos[1]} /></div>
+        {#each productos as prod}
+            {#if prod.exclusivo}
+                <div class="banner"><Banner data={prod} /></div>
+            {/if}
+        {/each}
     </div>
     <ul class="puntos">
-        <li class="punto activo">1</li>
-        <li class="punto">2</li>
+        <li class="punto activo" />
+        <li class="punto" />
     </ul>
 </div>
 
@@ -40,6 +44,7 @@
         width: 100%;
         max-width: 120em;
         overflow: hidden;
+        background-color: rgb(144, 144, 144);
     }
     .carousel .grande {
         width: 200%;
@@ -61,10 +66,11 @@
         align-items: center;
     }
     .carousel .punto {
-        width: 2rem;
-        height: 2rem;
+        width: 1rem;
+        height: 1rem;
         margin: 1rem;
         border: 0.16rem solid black;
+        border-radius: 0.7rem;
     }
     .carousel .punto.activo {
         background-color: orange;

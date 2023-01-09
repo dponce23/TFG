@@ -14,7 +14,7 @@
       "stock": "",
       "descripcion": "CAMISETA BLANCA ALGODON 100%",
       "exclusivo": "1",
-      "imagen": "/src/assets/camiseta_blanca.png"
+      "imagen": "/src/assets/img_productos/camiseta_blanca.png"
     },
     {
       "id_prod": "12",
@@ -24,7 +24,7 @@
       "stock": "",
       "descripcion": "CAMISETA NEGRA ALGODON 100%",
       "exclusivo": "2",
-      "imagen": "/src/assets/camiseta_negra.png"
+      "imagen": "/src/assets/img_productos/camiseta_negra.png"
     },
     {
       "id_prod": "12",
@@ -33,7 +33,7 @@
       "precio": "",
       "stock": "",
       "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
-      "imagen": "/src/assets/camiseta_blanca.png"
+      "imagen": "/src/assets/img_productos/camiseta_blanca.png"
     },
     {
       "id_prod": "12",
@@ -42,7 +42,7 @@
       "precio": "",
       "stock": "",
       "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
-      "imagen": "/src/assets/camiseta_blanca.png"
+      "imagen": "/src/assets/img_productos/camiseta_blanca.png"
     },
     {
       "id_prod": "12",
@@ -51,7 +51,7 @@
       "precio": "",
       "stock": "",
       "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
-      "imagen": "/src/assets/camiseta_blanca.png"
+      "imagen": "/src/assets/img_productos/camiseta_blanca.png"
     },
     {
       "id_prod": "12",
@@ -60,7 +60,7 @@
       "precio": "",
       "stock": "",
       "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
-      "imagen": "/src/assets/camiseta_blanca.png"
+      "imagen": "/src/assets/img_productos/camiseta_blanca.png"
     },
     {
       "id_prod": "12",
@@ -69,7 +69,7 @@
       "precio": "",
       "stock": "",
       "descripcion": "es un producto btbtstbwgsgsfssgsgsgsgsgwgwgwgwbsbgwwrg",
-      "imagen": "/src/assets/camiseta_blanca.png"
+      "imagen": "/src/assets/img_productos/camiseta_blanca.png"
     }
   ]
 }

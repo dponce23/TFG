@@ -10,7 +10,7 @@
         <img src={data?.imagen} alt="" />
       </div>
       <div>
-        <p><b>DESCUENTO 10%</b> {data?.descripcion}</p>
+        <p><b>¡¡OFERTA DISPONIBLE!!</b> {data?.descripcion}</p>
       </div>
     </div>
   </div>
@@ -32,8 +32,7 @@
 <style>
   .container {
     position: relative;
-    margin: 00.16rem;
-    background-color: rgb(144, 144, 144);
+    background-color: rgba(144, 144, 144, 0.6);
   }
 
   .etiqueta {
