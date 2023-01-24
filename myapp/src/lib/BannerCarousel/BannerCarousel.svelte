@@ -40,42 +40,5 @@
 </div>
 
 <style>
-    .carousel {
-        width: 100%;
-        max-width: 120em;
-        overflow: hidden;
-        background-color: rgb(144, 144, 144);
-    }
-    .carousel .grande {
-        width: 200%;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        transition: all 0.5s ease;
-    }
-    .carousel .banner {
-        width: calc(100% / 2);
-    }
-    .carousel .puntos {
-        width: 100%;
-        padding: 0.5rem;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .carousel .punto {
-        width: 1rem;
-        height: 1rem;
-        margin: 1rem;
-        border: 0.16rem solid black;
-        border-radius: 0.7rem;
-    }
-    .carousel .punto.activo {
-        background-color: orange;
-    }
-    ul {
-        list-style-type: none;
-    }
+    @import "./BannerCarousel.less";
 </style>

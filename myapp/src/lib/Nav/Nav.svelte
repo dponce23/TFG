@@ -12,23 +12,5 @@
 </div>
 
 <style>
-  div {
-    background-color: rgb(0, 0, 0);
-  }
-
-  a {
-    padding: 1.5rem;
-  }
-
-  div.body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-
-  img {
-    width: 150px;
-    height: 75px;
-  }
+  @import "./Nav.less";
 </style>

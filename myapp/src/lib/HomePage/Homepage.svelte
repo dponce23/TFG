@@ -2,4 +2,10 @@
   import BannerCarousel from "../BannerCarousel/BannerCarousel.svelte";
 </script>
 
-<BannerCarousel />
+<div>
+  <BannerCarousel />
+</div>
+
+<style>
+  @import "./HomePage.less";
+</style>

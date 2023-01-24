@@ -44,3 +44,7 @@ eptación de la Política de cookies
     el uso de cookies. No obstante, puedes acceder a la información sobre la
     Política de cookies en el pie de todas nuestras páginas.
 </p>
+
+<style>
+    @import "./PoliticaCookies.less";
+</style>

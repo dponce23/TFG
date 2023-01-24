@@ -380,3 +380,7 @@
     presente Política de Privacidad que afecte al tratamiento de tus datos
     personales.
 </p>
+
+<style>
+    @import "./PoliticaPrivacidad.less";
+</style>

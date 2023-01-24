@@ -1,7 +1,6 @@
 .container {
     position: relative;
-    margin: 00.16rem;
-    background-color: rgb(144, 144, 144);
+    background-color: rgba(179, 179, 179, 0.6);
 }
 
 .etiqueta {
@@ -13,7 +12,7 @@
     color: white;
 }
 
-.info {
+.container .info {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -25,7 +24,11 @@
     width: 400px;
     height: 400px;
     line-height: 3rem;
-    word-wrap: break-word;
+}
+
+.info .texto {
+    display: flex;
+    flex-direction: column;
 }
 
 img {

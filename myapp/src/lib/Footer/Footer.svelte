@@ -69,32 +69,5 @@
 </div>
 
 <style>
-    .contenedor {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-    }
-    .lista {
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-    }
-    li {
-        margin: 1rem;
-    }
-    .lista img {
-        width: 2rem;
-        height: 2rem;
-    }
-    p img {
-        width: 8rem;
-        height: 3rem;
-    }
-    p {
-        padding: 1rem;
-    }
+    @import "./Footer.less";
 </style>

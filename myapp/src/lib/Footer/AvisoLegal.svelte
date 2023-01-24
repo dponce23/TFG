@@ -186,3 +186,7 @@
     que se trate de una empresa, ambas partes se someten, con renuncia expresa a
     cualquier otro fuero, a los Juzgados y Tribunales de Barcelona (España).
 </p>
+
+<style>
+    @import "./AvisoLegal.less";
+</style>
