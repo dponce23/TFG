@@ -21,8 +21,8 @@
 }
 
 .info div {
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
     line-height: 3rem;
 }
 
@@ -31,7 +31,51 @@
     flex-direction: column;
 }
 
+.info .texto .porcentaje {
+    margin: 0;
+    font-size: 7rem;
+    padding: 3rem;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 1rem 1rem 0.40rem black;
+    color: white;
+}
+
 img {
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
+}
+
+@media (max-width: 420px) {
+
+    .container .info {
+        padding-bottom: 0;
+        font-size: 1.7rem;
+    }
+
+    .info div {
+        width: 25rem;
+        height: 15rem;
+        line-height: 3rem;
+    }
+
+    img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .info .texto .porcentaje {
+        margin: 0;
+        font-size: 3rem;
+        padding: 1rem;
+        width: 10rem;
+    }
+
+    .info .texto {
+        align-items: center;
+    }
+
+    .etiqueta {
+        left: 1rem;
+    }
+
 }

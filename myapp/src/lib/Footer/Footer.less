@@ -8,18 +8,38 @@
     color: rgb(255, 255, 255);
 }
 
-.lista {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
 
-.lista img {
+
+.redes_sociales img {
     width: 2rem;
     height: 2rem;
 }
 
-p img {
+.cc {
     width: 8rem;
     height: 3rem;
+}
+
+@media (max-width: 420px) {
+    .contenedor {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .cont_lista {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        font-size: 0.75rem;
+    }
+
+    .redes_sociales img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .cc {
+        width: 5rem;
+        height: 2rem;
+    }
 }

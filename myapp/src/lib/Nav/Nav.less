@@ -1,8 +1,4 @@
-a {
-    padding: 1.5rem;
-}
-
-div.body {
+div.bodyNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +6,63 @@ div.body {
     background-color: rgb(0, 0, 0);
 }
 
-.body img {
-    width: 150px;
-    height: 75px;
+.content {
+    display: flex;
+}
+
+div.link a {
+    padding: 1rem;
+}
+
+.bodyNav img {
+    width: 9.375rem;
+    height: 4.688rem;
+}
+
+.menu {
+    margin-right: 2rem;
+    color: rgb(157, 30, 30);
+    display: none;
+}
+
+@media (max-width: 420px) {
+    .linksNav {
+        position: relative;
+        display: inline-block;
+    }
+
+    .content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        right: 2rem;
+    }
+
+    .menu {
+        display: block;
+        background-color: #faebd7;
+        color: rgb(0, 0, 0);
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+
+    }
+
+    div.link a {
+        color: black;
+        padding: 1rem;
+        text-decoration: none;
+        display: block;
+    }
+
+    div.link:hover {
+        background-color: rgb(107, 105, 105);
+    }
+
+    .show {
+        display: block;
+    }
 }
