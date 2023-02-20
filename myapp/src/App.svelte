@@ -7,8 +7,12 @@
 </script>
 
 <main>
-  <Nav {links} />
-  <Router {routes} />
+  <div>
+    <Nav {links} />
+  </div>
+  <div class="bodyPages">
+    <Router {routes} />
+  </div>
   <Footer />
 </main>
 
