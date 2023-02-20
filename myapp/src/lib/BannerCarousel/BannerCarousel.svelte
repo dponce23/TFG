@@ -1,9 +1,8 @@
 <script>
     import { onMount } from "svelte";
-    import { query_selector_all } from "svelte/internal";
     import Banner from "../Banner/Banner.svelte";
-    import { productos } from "../data-mock.json";
-
+    import { obtenerProductos } from "../apiTest";
+    let productos = [];
     const moveBanner = () => {
         const grande = document.querySelector(".grande");
         const puntos = document.querySelectorAll(".punto");
@@ -22,15 +21,21 @@
             });
         });
     };
+    try {
+        obtenerProductos().then((prods) => {
+            productos[0] = prods[0];
+            productos[1] = prods[1];
+        });
+    } catch (e) {
+        console.log(e);
+    }
     onMount(moveBanner);
 </script>
 
 <div class="carousel">
     <div class="grande">
         {#each productos as prod}
-            {#if prod.exclusivo}
-                <div class="banner"><Banner data={prod} /></div>
-            {/if}
+            <div class="banner"><Banner data={prod} /></div>
         {/each}
     </div>
     <ul class="puntos">
