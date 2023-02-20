@@ -1,13 +1,34 @@
 <script>
   export let links = [];
+  import { link } from "svelte-spa-router";
+  const mostrar = () => {
+    document.getElementById("myDropdown").classList.toggle("show");
+  };
+  window.onclick = function (event) {
+    if (!event.target.matches(".menu")) {
+      var dropdowns = document.getElementsByClassName("content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
+        }
+      }
+    }
+  };
 </script>
 
-<div class="body">
+<div class="bodyNav">
   <img src="/src/assets/logo.png" alt="" />
-  <div>
-    {#each links as link}
-      <a href={link.enlace}>{link.texto}</a>
-    {/each}
+  <div class="linksNav">
+    <div on:click={mostrar} class="menu">Menu</div>
+    <div id="myDropdown" class="content">
+      {#each links as l}
+        <div class="link">
+          <a href={l.enlace} use:link>{l.texto}</a>
+        </div>
+      {/each}
+    </div>
   </div>
 </div>
 
