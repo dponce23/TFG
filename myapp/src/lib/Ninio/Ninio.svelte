@@ -1,5 +1,5 @@
 <script>
-    import { obtenerProductos } from "../apiTest";
+    import { obtenerProductos } from "../Api/apiCall";
     import ProductListing from "../Product/ProductListing.svelte";
     let prodNiños = [];
 
