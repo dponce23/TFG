@@ -1,7 +1,7 @@
 <script>
   export let links = [];
   import { link } from "svelte-spa-router";
-  const mostrar = () => {
+  const showMenu = () => {
     document.getElementById("myDropdown").classList.toggle("show");
   };
   window.onclick = function (event) {
@@ -21,11 +21,11 @@
 <div class="bodyNav">
   <img src="/src/assets/logo.png" alt="" />
   <div class="linksNav">
-    <div on:click={mostrar} class="menu">Menu</div>
+    <div on:click={showMenu} class="menu">Menu</div>
     <div id="myDropdown" class="content">
       {#each links as l}
         <div class="link">
-          <a href={l.enlace} use:link>{l.texto}</a>
+          <a href={l.link} use:link>{l.text}</a>
         </div>
       {/each}
     </div>
