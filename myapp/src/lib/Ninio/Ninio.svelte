@@ -1,5 +1,9 @@
 <script>
+<<<<<<< HEAD
+    import { obtenerProductos } from "../Api/apiCall";
+=======
     import { obtainProducts } from "../apiTest";
+>>>>>>> main
     import ProductListing from "../Product/ProductListing.svelte";
     let childProducts = [];
 
