@@ -1,10 +1,10 @@
-export async function obtenerProductos() {
+export async function obtainProducts() {
     const res = await fetch("https://fakestoreapi.com/products");
     const data = await res.json();
-    let productos = [];
+    let products = [];
     data.forEach((prod, i) => {
-        productos[i]=prod;
+        products[i] = prod;
     });
-    return productos
+    return products
 }
 

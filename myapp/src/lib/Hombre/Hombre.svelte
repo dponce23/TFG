@@ -3,7 +3,7 @@
 </script>
 
 <h1>PAGINA HOMBRES</h1>
-<ProductListing categoria="hombre" />
+<ProductListing />
 
 <style>
     @import "./Hombre.less";

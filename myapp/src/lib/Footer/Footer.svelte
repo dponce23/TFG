@@ -13,7 +13,7 @@
 </script>
 
 <div class="contenedor">
-    <div class="cont_lista">
+    <div class="list_container">
         <p>
             Esta obra está bajo una licencia de Creative Commons:<br />
             <a
@@ -27,12 +27,12 @@
             >
         </p>
     </div>
-    <div class="cont_lista">
+    <div class="list_container">
         <a href="#/politica_privacidad">Política de Privacidad</a>
         <a href="#/aviso_legal">Aviso Legal</a>
         <a href="#/politica_cookies">Politica de Cookies</a>
     </div>
-    <div class="redes_sociales">
+    <div class="social_media">
         <a href="#"
             ><img
                 src="/src/assets/iconos_redes_sociales/facebook.png"

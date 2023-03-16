@@ -264,10 +264,10 @@
     similares. Base legal: Consentimiento: mediante la marcación de las opciones
     de geolocalización que aparecen al acceder a la App por primera vez, así
     como a través de la configuración de la App, autorizarás a la Sociedad y a
-    VGMS el uso del servicio de geolocalización conforme a lo indicado en el
-    punto anterior. Te informamos de que en cualquier momento puedes cerrar la
-    App para evitar ser geolocalizado en un momento concreto. Asimismo, a través
-    de la configuración de la App tendrás una opción para revocar tu
+    VGMS el uso del servicio de geolocalización conforme a lo indicado en el dot
+    anterior. Te informamos de que en cualquier momento puedes cerrar la App
+    para evitar ser geolocalizado en un momento concreto. Asimismo, a través de
+    la configuración de la App tendrás una opción para revocar tu
     consentimiento. Por último, puedes modificar los permisos de geolocalización
     a través de la configuración del sistema operativo de tu dispositivo. Si
     necesitas más información, consulta los siguientes enlaces: – Android:

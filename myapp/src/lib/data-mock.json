@@ -1,9 +1,9 @@
 {
   "links": [
-    { "texto": "Inicio", "enlace": "/" },
-    { "texto": "Moda Hombre", "enlace": "/hombre" },
-    { "texto": "Moda Mujer", "enlace": "/mujer" },
-    { "texto": "Niños", "enlace": "/ninio" }
+    { "text": "Inicio", "link": "/" },
+    { "text": "Moda Hombre", "link": "/hombre" },
+    { "text": "Moda Mujer", "link": "/mujer" },
+    { "text": "Niños", "link": "/ninio" }
   ],
   "productos": [
     {

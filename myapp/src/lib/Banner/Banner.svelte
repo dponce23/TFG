@@ -1,18 +1,18 @@
 <script>
   export let data = {};
 
-  const etiqueta = "EXCLUSIVO";
+  const label = "EXCLUSIVO";
 </script>
 
 <div class="container">
-  <span class="etiqueta"><b>{etiqueta}</b></span>
+  <span class="label"><b>{label}</b></span>
   <div class="info">
     <div>
       <img src={data?.image} alt="" />
     </div>
-    <div class="texto">
+    <div class="text">
       <p><b>¡¡OFERTA DISPONIBLE!!</b></p>
-      <p class="porcentaje">-50%</p>
+      <p class="percentage">-50%</p>
     </div>
   </div>
 </div>
