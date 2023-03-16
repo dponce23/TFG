@@ -1,13 +1,9 @@
 <script>
     import { onMount } from "svelte";
     import Banner from "../Banner/Banner.svelte";
-<<<<<<< HEAD
-    import { obtenerProductos } from "../Api/apiCall";
-    let productos = [];
-=======
-    import { obtainProducts } from "../apiTest";
+    import { obtainProducts } from "../Api/apiCall";
     let products = [];
->>>>>>> main
+
     const moveBanner = () => {
         const big = document.querySelector(".big");
         const dots = document.querySelectorAll(".dot");
