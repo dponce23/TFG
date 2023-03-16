@@ -1,14 +1,18 @@
 <script>
+<<<<<<< HEAD
     import { obtenerProductos } from "../Api/apiCall";
+=======
+    import { obtainProducts } from "../apiTest";
+>>>>>>> main
     import ProductListing from "../Product/ProductListing.svelte";
-    let prodMujer = [];
+    let womanProds = [];
 
     try {
-        obtenerProductos().then((prods) => {
+        obtainProducts().then((prods) => {
             prods.forEach((e, i) => {
                 if (prods[i].category.includes("men")) {
                     console.log(e.id);
-                    prodMujer[i] = e;
+                    womanProds[i] = e;
                 } else {
                     console.log("hola");
                 }
@@ -21,7 +25,7 @@
 
 <h1>PAGINA MUJERES</h1>
 
-<ProductListing productos={prodMujer} />
+<ProductListing products={womanProds} />
 
 <style>
     @import "./Mujer.less";

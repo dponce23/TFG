@@ -143,12 +143,12 @@
     enlaces o hipervínculos hacia otros lugares de Internet, LA COMPAÑÍA no
     ejercerá ningún tipo de control sobre estos lugares y contenidos. En ningún
     caso LA COMPAÑÍA asumirá responsabilidad alguna por los contenidos de algún
-    enlace perteneciente a un lugar Web ajeno, ni garantizará la disponibilidad
+    link perteneciente a un lugar Web ajeno, ni garantizará la disponibilidad
     técnica, calidad, fiabilidad, exactitud, amplitud, veracidad y validez de
     cualquier material o información contenida en cabeza de los hipervínculos u
     otros lugares de Internet. 8.2. Estos enlaces se proporcionan únicamente
     para informar al Usuario sobre la existencia de otras fuentes de información
-    sobre un tema concreto, y la inclusión de un enlace no implica la aprobación
+    sobre un tema concreto, y la inclusión de un link no implica la aprobación
     de la página web enlazada por parte de LA COMPAÑÍA. 8.3. LA COMPAÑÍA tan
     sólo autoriza menciones a sus contenidos en otras sedes Web, con el
     tratamiento que éstas consideren siempre que sea respetuoso, cumpla la
@@ -164,7 +164,7 @@
     conforme a lo establecido por la legislación española de Protección de Datos
     de Carácter Personal. 9.2. El usuario podrá proporcionar a LA COMPAÑÍA sus
     datos de carácter personal a través de los distintos formularios que a tal
-    efecto aparecen en la Web. Dichos formularios incorporan un texto legal en
+    efecto aparecen en la Web. Dichos formularios incorporan un text legal en
     materia de protección de datos personales que da cumplimiento a las
     exigencias establecidas en el REGLAMENTO (UE) 2016/679 del Parlamento
     Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las

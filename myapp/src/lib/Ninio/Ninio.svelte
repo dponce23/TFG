@@ -1,14 +1,18 @@
 <script>
+<<<<<<< HEAD
     import { obtenerProductos } from "../Api/apiCall";
+=======
+    import { obtainProducts } from "../apiTest";
+>>>>>>> main
     import ProductListing from "../Product/ProductListing.svelte";
-    let prodNiños = [];
+    let childProducts = [];
 
     try {
-        obtenerProductos().then((prods) => {
+        obtainProducts().then((prods) => {
             prods.forEach((e, i) => {
                 if (!prods[i].category.includes("men")) {
                     console.log(e.id);
-                    prodNiños[i] = e;
+                    childProducts[i] = e;
                 }
             });
         });
@@ -18,7 +22,7 @@
 </script>
 
 <h1>PAGINA DE NIÑOS</h1>
-<ProductListing productos={prodNiños} />
+<ProductListing products={childProducts} />
 
 <style>
     @import "./Ninio.less";
