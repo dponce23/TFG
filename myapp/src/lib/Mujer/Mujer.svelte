@@ -5,21 +5,14 @@
 
     try {
         obtainProducts().then((prods) => {
-            prods.forEach((e, i) => {
-                if (prods[i].category.includes("men")) {
-                    console.log(e.id);
-                    womanProds[i] = e;
-                } else {
-                    console.log("hola");
-                }
-            });
+            womanProds = prods.filter((p) => p.category.includes("women"));
         });
     } catch (e) {
         console.log(e);
     }
 </script>
 
-<h1>PAGINA MUJERES</h1>
+<h1>MODA MUJERES</h1>
 
 <ProductListing products={womanProds} />
 

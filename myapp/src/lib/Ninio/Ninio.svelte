@@ -5,19 +5,14 @@
 
     try {
         obtainProducts().then((prods) => {
-            prods.forEach((e, i) => {
-                if (!prods[i].category.includes("men")) {
-                    console.log(e.id);
-                    childProducts[i] = e;
-                }
-            });
+            childProducts = prods.filter((p) => !p.category.includes("men"));
         });
     } catch (e) {
         console.log(e);
     }
 </script>
 
-<h1>PAGINA DE NIÑOS</h1>
+<h1>MODA NIÑOS</h1>
 <ProductListing products={childProducts} />
 
 <style>
