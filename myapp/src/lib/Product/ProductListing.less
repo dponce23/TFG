@@ -1,0 +1,48 @@
+.articles {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    row-gap: 2rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.article img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.article {
+    border: 0.1rem solid;
+    padding: 1rem;
+    background-color: bisque;
+}
+
+.article:hover {
+    transform: scale(1.1);
+}
+
+.article p {
+    font-size: 1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@media (max-width: 425px) {
+    .article img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .articles {
+        grid-template-columns: 50% 50%;
+        margin-bottom: 3rem;
+    }
+
+    .article p {
+        font-size: 0.8rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}

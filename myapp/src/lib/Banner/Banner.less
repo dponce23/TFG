@@ -45,7 +45,18 @@ img {
     height: 25rem;
 }
 
-@media (max-width: 420px) {
+@media (min-height:960px) {
+    .container .info {
+        padding: 7.3rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .label {
+        transform: rotate(-90deg);
+        left: -2.1rem;
+        top: 4rem;
+    }
 
     .container .info {
         padding-bottom: 0;
@@ -53,14 +64,14 @@ img {
     }
 
     .info div {
-        width: 25rem;
-        height: 15rem;
+        width: 23rem;
+        height: 13rem;
         line-height: 3rem;
     }
 
     img {
-        width: 15rem;
-        height: 15rem;
+        width: 13rem;
+        height: 13rem;
     }
 
     .info .text .percentage {
@@ -72,10 +83,6 @@ img {
 
     .info .text {
         align-items: center;
-    }
-
-    .label {
-        left: 1rem;
     }
 
 }
