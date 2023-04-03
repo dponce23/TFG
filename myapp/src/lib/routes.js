@@ -22,6 +22,9 @@ const routes = {
     "/politica_cookies": wrap({
         asyncComponent: () => import("./Footer/PoliticaCookies.svelte")
     }),
+    "/producto": wrap({
+        asyncComponent: () => import("./Product/Product.svelte")
+    }),
     "*": Error,
 };
 
