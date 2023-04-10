@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 4rem;
+    padding: 3rem;
     font-size: 3rem;
 }
 
@@ -45,17 +45,15 @@ img {
     height: 25rem;
 }
 
-@media (min-width:1000px) {
-    .container .info {
-        padding: 7rem;
-    }
-}
-
 @media (max-width: 425px) {
     .label {
         transform: rotate(-90deg);
         left: -2.1rem;
         top: 4rem;
+    }
+
+    .container .info {
+        font-size: 1rem;
     }
 
     .info div {
@@ -65,8 +63,8 @@ img {
     }
 
     img {
-        width: 15rem;
-        height: 15rem;
+        width: 12rem;
+        height: 12rem;
     }
 
     .info .text .percentage {
@@ -78,10 +76,6 @@ img {
 
     .info .text {
         align-items: center;
-    }
-
-    .label {
-        left: 1rem;
     }
 
 }
