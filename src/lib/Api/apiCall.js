@@ -1,10 +1,9 @@
 export async function obtainProducts() {
+  try {
     const res = await fetch("https://fakestoreapi.com/products");
-    const data = await res.json();
-    let products = [];
-    data.forEach((prod, i) => {
-        products[i] = prod;
-    });
-    return products
+    return await res.json();
+  } catch (error) {
+    console.log(error);
+    return error;
+  }
 }
-
