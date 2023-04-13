@@ -6,7 +6,9 @@
 <div class="articles">
     {#each products as prod}
         <div class="article">
-            <a href="/producto" use:link><img src={prod?.image} alt="" /></a>
+            <a href="/producto?id={prod.id}" use:link
+                ><img src={prod?.image} alt="" /></a
+            >
             <strong><p>{prod?.title}</p></strong>
             <p>{prod?.description}</p>
         </div>
