@@ -1,3 +1,4 @@
+import cors from 'cors'
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
@@ -6,11 +7,12 @@ dotenv.config()
 const app = express();
 const port = process.env.PORT || 9001;
 
-// middleware
-app.use(express.json())
-app.use("/api", prodRoutes)
 
 //routes
+app.use(express.json())
+app.use(cors())
+app.use("/api", prodRoutes)
+
 app.get("/", (req, res) => {
     res.send("welcome to my API")
 })
