@@ -3,6 +3,8 @@
     { "text": "Inicio", "link": "/" },
     { "text": "Moda Hombre", "link": "/hombre" },
     { "text": "Moda Mujer", "link": "/mujer" },
-    { "text": "Niños", "link": "/ninio" }
+    { "text": "Niños", "link": "/ninio" },
+    { "text": "Iniciar Sesion", "link": "/inicio_sesion" },
+    { "text": "Registrase", "link": "/registro" }
   ]
 }

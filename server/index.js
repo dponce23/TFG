@@ -3,6 +3,8 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import prodRoutes from "./routes/products.js"
+import userRoutes from "./routes/users.js"
+
 dotenv.config()
 const app = express();
 const port = process.env.PORT || 9001;
@@ -12,6 +14,7 @@ const port = process.env.PORT || 9001;
 app.use(express.json())
 app.use(cors())
 app.use("/api", prodRoutes)
+app.use("/api", userRoutes)
 
 app.get("/", (req, res) => {
     res.send("welcome to my API")

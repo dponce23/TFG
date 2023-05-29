@@ -1,5 +1,5 @@
 import express from "express";
-import userSchema from "../models/userModel";
+import userSchema from "../models/userModel.js";
 
 const router = express.Router();
 
@@ -19,8 +19,20 @@ router.get("/users", (req, res) => {
         .then((data) => res.json(data))
         .catch((error) => res.json({ message: error }));
 });
+// get all userNames
+router.post("/users/single_user", (req, res) => {
+    const { userName, email, phone } = req.body;
+    let filtro = { $or: [{ userName }, { email }, { phone }] }
+    userSchema.findOne(filtro).then((data) => res.json(data)).catch((error) => res.json({ message: error }));
+});
 
-// get a user
+//get user by userName 
+router.post("/users/is_authorized", (req, res) => {
+    const { userName } = req.body;
+    userSchema.findOne({ userName: userName }, { password: 1 }).then((data) => res.json(data)).catch((error) => res.json({ message: error }));
+});
+
+// get a user by id
 router.get("/users/:id", (req, res) => {
     const { id } = req.params;
     userSchema
