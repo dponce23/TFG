@@ -1,14 +1,10 @@
 import mongoose from "mongoose";
 
 const userSchema = mongoose.Schema({
-    userId: {
-        type: Number,
-        required: true,
-        unique: true
-    },
     userName: {
         type: String,
         required: true,
+        unique: true
     },
     password: {
         type: String,
@@ -17,6 +13,7 @@ const userSchema = mongoose.Schema({
     email: {
         type: String,
         required: true,
+        unique: true
     },
     billing_address: {
         type: String,
@@ -33,7 +30,12 @@ const userSchema = mongoose.Schema({
     phone: {
         type: String,
         required: true,
+        unique: true
     },
+    myProducts: {
+        type: Array,
+        required: true,
+    }
 })
 
 export default mongoose.model("user", userSchema);
