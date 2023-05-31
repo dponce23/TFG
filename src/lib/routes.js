@@ -10,6 +10,8 @@ import AvisoLegal from "./Footer/AvisoLegal.svelte";
 import PoliticaCookies from "./Footer/PoliticaCookies.svelte";
 import Product from "./Product/Product.svelte";
 import Login from "./User/Login.svelte";
+import Cart from "./Cart/Cart.svelte";
+import UserProducts from "./UserProducts/UserProducts.svelte";
 
 const routes = {
     "/": Homepage,
@@ -21,7 +23,9 @@ const routes = {
     "/politica_privacidad": PoliticaPrivacidad,
     "/aviso_legal": AvisoLegal,
     "/politica_cookies": PoliticaCookies,
-    "/producto": Product,
+    "/product": Product,
+    "/mis_compras": UserProducts,
+    "/carrito": Cart,
     "*": Error,
 };
 
