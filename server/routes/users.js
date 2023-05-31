@@ -21,15 +21,21 @@ router.get("/users", (req, res) => {
 });
 // get all userNames
 router.post("/users/single_user", (req, res) => {
-    const { userName, email, phone } = req.body;
-    let filtro = { $or: [{ userName }, { email }, { phone }] }
-    userSchema.findOne(filtro).then((data) => res.json(data)).catch((error) => res.json({ message: error }));
+    const { _id, userName, email, phone } = req.body;
+    let filtro = { $or: [{ _id }, { userName }, { email }, { phone }] }
+    userSchema
+        .findOne(filtro)
+        .then((data) => res.json(data))
+        .catch((error) => res.json({ message: error }));
 });
 
 //get user by userName 
 router.post("/users/is_authorized", (req, res) => {
     const { userName } = req.body;
-    userSchema.findOne({ userName: userName }, { password: 1 }).then((data) => res.json(data)).catch((error) => res.json({ message: error }));
+    userSchema
+        .findOne({ userName: userName }, { password: 1 })
+        .then((data) => res.json(data))
+        .catch((error) => res.json({ message: error }));
 });
 
 // get a user by id
@@ -50,12 +56,12 @@ router.delete("/users/:id", (req, res) => {
         .catch((error) => res.json({ message: error }));
 });
 
-// update a user
-router.put("/users/:id", (req, res) => {
-    const { id } = req.params;
-    const { name, age, email } = req.body;
+// update products array user
+router.patch("/users/update/userProds", (req, res) => {
+    const { _id, myProducts } = req.body;
     userSchema
-        .then((data) => res.json(data))
+        .updateOne({ _id: _id }, { $set: { myProducts: myProducts } })
+        .then(res.json({ message: "Stock actualizado correctamente" }))
         .catch((error) => res.json({ message: error }));
 });
 
