@@ -1,5 +1,7 @@
 <script>
   import { checkUserAuthorized } from "../Api/apiCall";
+  import { setCookie } from "../Cookies.utils";
+  let userID;
 
   let user = {
     name: "",
@@ -9,6 +11,7 @@
     let response = await checkUserAuthorized(user);
     if (response) {
       if (response.password === user.password) {
+        userID = response._id;
         return true;
       } else {
         return false;
@@ -25,9 +28,10 @@
     });
 
     if (isAuthorized) {
-      console.log("AUTORIZADO");
+      setCookie("UserID", userID);
+      window.location.href = "/";
     } else {
-      console.log("Este usuario no está registrado");
+      window.alert("Nombre de usuario o contraseña incorrectos");
     }
   }
 </script>
