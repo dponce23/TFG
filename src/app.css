@@ -59,6 +59,18 @@ main {
   flex-grow: 1;
 }
 
+.cart_icon img{
+  position: absolute;
+  right: 1rem;
+  top: 5rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 1;
+}
+
+.cart_icon img:hover{
+  transform: scale(1.2);
+}
 
 
 @media (prefers-color-scheme: light) {
