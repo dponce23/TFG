@@ -1,23 +1,20 @@
 <script>
-    import ProductListing from "../Product/ProductListing.svelte";
-    import { obtainProducts } from "../Api/apiCall";
-    let manProds = [];
+  import ProductListing from "../Product/ProductListing.svelte";
+  import { obtainProducts } from "../Api/apiCall";
+  let manProds = [];
 
-    try {
-        obtainProducts().then((prods) => {
-            manProds = prods.filter(
-                (p) =>
-                    p.category.includes("men") && !p.category.includes("women")
-            );
-        });
-    } catch (e) {
-        console.log(e);
-    }
+  try {
+    obtainProducts().then((prods) => {
+      manProds = prods.filter((p) => p.category.includes("hombre"));
+    });
+  } catch (e) {
+    console.log(e);
+  }
 </script>
 
 <h1>MODA HOMBRES</h1>
 <ProductListing products={manProds} />
 
 <style>
-    @import "./Hombre.less";
+  @import "./Hombre.less";
 </style>

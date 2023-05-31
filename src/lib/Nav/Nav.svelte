@@ -1,6 +1,8 @@
 <script>
-  export let links = [];
+  import { removeCookie } from "../Cookies.utils";
   import { link } from "svelte-spa-router";
+  export let links = [];
+
   const showMenu = () => {
     document.getElementById("myDropdown").classList.toggle("show");
   };
@@ -16,6 +18,12 @@
       }
     }
   };
+
+  const closeSession = () => {
+    removeCookie("UserID");
+    window.location.href = "/";
+    window.alert("Sesion Cerrada");
+  };
 </script>
 
 <div class="bodyNav">
@@ -25,7 +33,11 @@
     <div id="myDropdown" class="content">
       {#each links as l}
         <div class="link">
-          <a href={l.link} use:link>{l.text}</a>
+          {#if l.link === "/cerrar_sesion"}
+            <a href={l.link} use:link on:click={closeSession}>{l.text}</a>
+          {:else}
+            <a href={l.link} use:link>{l.text}</a>
+          {/if}
         </div>
       {/each}
     </div>
