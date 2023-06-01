@@ -42,6 +42,9 @@
     visible = true;
     showArticles = [];
     objetos.set([]);
+    setTimeout(() => {
+      visible = false;
+    }, 3000);
   }
 
   function orderCompleted() {
@@ -66,12 +69,12 @@
 
 {#if visible}
   <div id="confirmationdDiv" on:blur={orderCompleted}>
-    <h2>{mensaje}</h2>
+    <p>{mensaje}</p>
   </div>
 {/if}
 {#if checkShowArticles}
-  <h2>FINALIZAR COMPRA</h2>
-  <div class="articles">
+  <h2 class="cart_title">FINALIZAR COMPRA</h2>
+  <div class="cart_articles">
     {#each showArticles as article}
       <div class="cart_article">
         <a href="/product?id={article?._idProd}" use:link
@@ -79,15 +82,15 @@
         >
         <strong><p>{article?.title}</p></strong>
         <p>{article?.price}€</p>
-        <div>{article?.quantity}</div>
+        <div class="article_quantity">{article?.quantity}</div>
       </div>
     {/each}
   </div>
-  <h4>PRECIO TOTAL: {totalPrice}€</h4>
+  <h4 class="total_price">PRECIO TOTAL: {totalPrice}€</h4>
   {#if !visible}
-    <button on:click={buyArticles}>COMPRAR</button>
+    <button on:click={buyArticles} id="submit">COMPRAR</button>
   {/if}
-{:else}
+{:else if !visible}
   <h2 class="empty">AÑADE ARTICULOS A TU CESTA 🛒</h2>
 {/if}
 

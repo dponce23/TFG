@@ -12,7 +12,7 @@
   }
 </script>
 
-<h1>MODA HOMBRES</h1>
+<p class="plp_title">MODA HOMBRES</p>
 <ProductListing products={manProds} />
 
 <style>

@@ -7,7 +7,7 @@
 <div class="container">
   <span class="label"><b>{label}</b></span>
   <div class="info">
-    <div>
+    <div class="banner_img">
       <img src={data?.image} alt="" />
     </div>
     <div class="text">

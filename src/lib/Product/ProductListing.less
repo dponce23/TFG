@@ -1,6 +1,6 @@
 .articles {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 45% 45%;
     row-gap: 2rem;
     column-gap: 1rem;
     justify-content: center;
@@ -8,8 +8,8 @@
 }
 
 .article img {
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 6rem;
 }
 
 .article {
@@ -30,33 +30,27 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+.listingLinks{
+    color: black;
+}
 
-@media (max-width: 500px) {
+@media (min-width: 768px) {
     .article img {
-        width: 5rem;
-        height: 5rem;
+        width: 11rem;
+        height: 10rem;
     }
 
     .articles {
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 31% 31% 31%;
         margin-bottom: 3rem;
     }
 
     .article p {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
+        font-size: 1rem;
     }
 
     .listingLinks{
         color: black;
     }
-
-}
-
-@media (min-width: 500px) and (max-width: 900px) {
-    .article img {
-        width: 5rem;
-        height: 5rem;
-    }
+    
 }

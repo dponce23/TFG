@@ -52,7 +52,7 @@
     >Password:
     <input bind:value={user.password} type="password" name="Passwd" required />
   </label>
-  <button type="submit" id="submit">Iniciar Sesion</button>
+  <button type="submit" class="login_button">Iniciar Sesion</button>
 </form>
 
 <style>

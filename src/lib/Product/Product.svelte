@@ -36,7 +36,7 @@
   function addToCart() {
     const article = { id: prodId, quantity: quantity };
     guardarObjeto(article);
-    alert("has añadido " + quantity);
+    alert("HAS AÑADIDO " + quantity + " PRODUCTO/S A TU CESTA");
   }
 </script>
 
@@ -48,24 +48,29 @@
       <p class="prod_title">{productInfo[0].title}</p>
       <img src={productInfo[0].image} alt="" />
       <p class="prod_description">{productInfo[0].description}</p>
+
+      {#if authorized}
+        <div class="quantity_input">
+          <label for="quantity">Cantidad:</label>
+          <button on:click={incrementarCantidad} id="incrementar">+</button>
+          <input
+            type="number"
+            id="quantity"
+            min="1"
+            bind:value={quantity}
+            readonly
+          />
+
+          <button on:click={decrementarCantidad} id="decrementar">-</button>
+        </div>
+
+        <button on:click={addToCart} id="aniadir">AÑADIR A LA CESTA</button>
+      {:else}
+        <p class="noAuthorized">
+          Para poder Realizar una compra debe Iniciar Sesion
+        </p>
+      {/if}
     </div>
-    <div>
-      <label for="quantity">Quantity:</label>
-      <input
-        type="number"
-        id="quantity"
-        min="1"
-        bind:value={quantity}
-        readonly
-      />
-      <button on:click={incrementarCantidad} id="incrementar">+</button>
-      <button on:click={decrementarCantidad} id="decrementar">-</button>
-    </div>
-    {#if authorized}
-      <button on:click={addToCart} id="añadir">AÑADIR A LA CESTA</button>
-    {:else}
-      <p>Para poder Realizar una compra debe Iniciar Sesion</p>
-    {/if}
   {/if}
 </div>
 

@@ -27,7 +27,7 @@
 </script>
 
 <div class="bodyNav">
-  <a href="/"><img src="/src/assets/logo.png" alt="" /></a>
+  <a href="#/"><img src="/src/assets/logo.png" alt="" /></a>
   <div class="linksNav">
     <div on:click={showMenu} class="menu">Menu</div>
     <div id="myDropdown" class="content">

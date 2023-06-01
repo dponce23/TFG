@@ -1,11 +1,87 @@
-@media (min-width: 300px) and (max-width: 500px) {
+
     .prod_container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: rgb(255, 230, 199);
+
     }
 
     .prod_title {
         font-weight: 900;
     }
-}
+
+    .prod_container p{
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .prod_container img{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .noAuthorized{
+        margin: 1rem 2rem;
+        font-size: small;
+        background-color: white;
+        padding: 0.32rem;
+        color: red;
+    }
+    .prod_description{
+        font-size: small;
+    }
+
+    .quantity_input{
+        font-size: small;
+        font-weight: 700;
+        padding: 1rem;
+    }
+
+    #incrementar,#decrementar{
+        border: none;
+        padding: 0.50rem;
+    }
+
+    .quantity_input input{
+        text-align: center;
+        width: 1rem;
+    }
+
+    #aniadir{
+        padding: 0.40rem;
+    color: rgb(25, 66, 105);
+    background-color: rgb(255, 174, 74);
+    border: none ;
+        margin: 1rem 0;
+        font-weight: 600;
+    }
+
+    @media (min-width:768px){
+        .prod_title {
+            font-size: 2rem;
+        }
+        .prod_description{
+            font-size: larger;
+        }
+        .prod_container img{
+            width: 25rem;
+        }
+        .quantity_input{
+            font-size: larger;
+        }
+        .quantity_input input{
+            width: 2rem;
+            height: 2rem;
+            font-size: medium;
+        }
+        #incrementar,#decrementar{
+            padding: 0.8rem;
+            font-size: medium;
+        }
+        #aniadir{
+            padding: 1rem;
+            font-size: larger;
+        }
+    }
+

@@ -12,7 +12,7 @@
   }
 </script>
 
-<h1>MODA NIÑOS</h1>
+<p class="plp_title">MODA NIÑOS</p>
 <ProductListing products={childProducts} />
 
 <style>

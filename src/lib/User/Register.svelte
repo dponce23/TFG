@@ -147,7 +147,7 @@
       required
     />
   </label>
-  <button type="submit" id="submit">Registrarse</button>
+  <button type="submit" class="login_button">Registrarse</button>
 </form>
 
 <style>

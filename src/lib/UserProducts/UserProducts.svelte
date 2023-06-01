@@ -15,4 +15,6 @@
   });
 </script>
 
+<h2 class="plp_title">MIS COMPRAS</h2>
+
 <ProductListing products={myProds} />

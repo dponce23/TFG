@@ -26,13 +26,15 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .carousel .dot {
+    margin: 1rem;
     width: 1rem;
     height: 1rem;
-    margin: 4rem 1rem 1rem;
-    border: 0.16rem solid black;
+    
+    border: 0.12rem solid black;
     border-radius: 0.7rem;
 }
 
@@ -44,12 +46,20 @@ ul {
     list-style-type: none;
 }
 
-@media (max-width: 425px) {
+@media (min-width: 768px) {
     .carousel .dot {
-        margin: 1rem;
+        width: 1.5rem;
+    height: 1.5rem;
+    margin: 4rem 1rem 1rem;
+       border: 0.16rem solid black;
+    }
+    .carousel .dots{
+        align-items: start;
     }
 
-    .carousel .dots {
-        margin: 0;
+}
+@media (min-width: 1000px){
+    .carousel .dots{
+        margin-top: 4rem;
     }
 }

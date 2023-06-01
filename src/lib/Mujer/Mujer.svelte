@@ -12,7 +12,7 @@
   }
 </script>
 
-<h1>MODA MUJERES</h1>
+<p class="plp_title">MODA MUJERES</p>
 
 <ProductListing products={womanProds} />
 
